@@ -1,0 +1,36 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+:root{
+	--right-color:#FF0000;
+	--left-color:#698AFF;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items:center;
+}
+
+svg{
+	width: 20rem;
+	height: 20rem;
+        transition: all .5s linear;
+        animation: rotate 2s linear infinite;
+}
+#left-glass{
+
+	fill: var(--left-color);
+}
+#right-glass{
+
+	fill: var(--right-color);
+}
+
+@keyframes rotate {
+        0%{transform: scale(1);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+}
